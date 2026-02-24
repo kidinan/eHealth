@@ -1,0 +1,9 @@
+com\clinic\MainVerticle.class
+com\clinic\repository\PatientRepository.class
+com\clinic\config\DbConfig.class
+com\clinic\handler\ChatHandler.class
+com\clinic\handler\PatientHandler.class
+com\clinic\handler\AppointmentHandler.class
+com\clinic\repository\AppointmentRepository.class
+com\clinic\security\JwtConfig.class
+com\clinic\util\HttpUtils.class

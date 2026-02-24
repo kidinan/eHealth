@@ -1,0 +1,40 @@
+@use "sass:color"; // Add this at the very top
+
+/* Healthcare Brand Colors */
+$hospital-blue: #005eb8;
+$bg-soft: #f4f7f9;
+$text-dark: #2c3e50;
+
+:root {
+  --primary: #{$hospital-blue};
+  --success: #28a745;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  background-color: $bg-soft;
+  color: $text-dark;
+}
+
+.btn-primary {
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  
+  &:hover {
+    /* Use color.adjust instead of darken */
+    background-color: color.adjust(#005eb8, $lightness: -10%);
+  }
+
+  &:disabled {
+    background-color: #a0c4e4;
+    cursor: not-allowed;
+  }
+}
