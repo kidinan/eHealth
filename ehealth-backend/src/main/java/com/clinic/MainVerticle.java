@@ -30,7 +30,7 @@ public class MainVerticle extends AbstractVerticle {
     public void start(Promise<Void> startPromise) {
         pgClient = DbConfig.getPool(vertx);
         
-        ChatHandler chatHandler = new ChatHandler("AIzaSyAl00nvIZirjWVH3PfPXLzZxDF_zfcCU3w");
+        ChatHandler chatHandler = new ChatHandler("API_Key");
 
         Router router = Router.router(vertx);
 
